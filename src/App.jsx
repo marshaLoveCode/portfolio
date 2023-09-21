@@ -9,7 +9,7 @@ import Projets from "./Componponents/Projets";
 import Contact from "./Componponents/Contact";
 
 function App() {
-  const [lang, setLang] = useState("en");
+  const [lang, setLang] = useState("fr");
   return (
     <>
       <Header lang={lang} setLang={setLang} />
