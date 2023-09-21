@@ -39,7 +39,7 @@ export default function Projets() {
             rel="noreferrer"
             target="_blank"
           >
-            <img src="/projets/I-make-things-moves.jpg" />
+            <img src="/projets/i-make-things-moves.jpg" />
             <h4>I make things moves - Motion Design</h4>
           </a>
           <div>
