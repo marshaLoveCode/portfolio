@@ -16,7 +16,7 @@ import WordpressLogo from "../logo/wordpress.svg";
 import { motion } from "framer-motion";
 
 export default function About({ lang }) {
-  const [techno, setTechno] = useState("");
+  const [techno, setTechno] = useState("Figma");
 
   return (
     <section className="about--section" id="about--section">
