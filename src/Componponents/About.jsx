@@ -46,7 +46,7 @@ export default function About({ lang }) {
         )}
       </div>
       <div className="about--section--competence">
-        <h4>Compétence</h4>
+        <h3>Compétence</h3>
         <div className="about--section--competence--logo">
           <img src={ReactLogo} onMouseOver={() => setTechno("React")} />
 
