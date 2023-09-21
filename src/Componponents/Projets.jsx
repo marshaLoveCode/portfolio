@@ -19,7 +19,7 @@ export default function Projets() {
             rel="noreferrer"
             target="_blank"
           >
-            <img src="/projets/Fabien-Gaillar.png" />
+            <img src="/projets/Fabien-Gaillar.jpg" />
             <h4>Fabien Gaillar - Artiste peintre</h4>
           </a>
           <div>
@@ -39,7 +39,7 @@ export default function Projets() {
             rel="noreferrer"
             target="_blank"
           >
-            <img src="/projets/I-make-things-moves.png" />
+            <img src="/projets/I-make-things-moves.jpg" />
             <h4>I make things moves - Motion Design</h4>
           </a>
           <div>
@@ -57,7 +57,7 @@ export default function Projets() {
             rel="noreferrer"
             target="_blank"
           >
-            <img src="/projets/gite-le-revel.png" />
+            <img src="/projets/gite-le-revel.jpg" />
             <h4>Gîte Le Revel</h4>
           </a>
           <div>
@@ -76,7 +76,7 @@ export default function Projets() {
             rel="noreferrer"
             target="_blank"
           >
-            <img src="/projets/50-cinquante-production.png" />
+            <img src="/projets/50-cinquante-production.jpg" />
             <h4>50-Cinquante Production</h4>
           </a>
           <div>
@@ -96,7 +96,7 @@ export default function Projets() {
             rel="noreferrer"
             target="_blank"
           >
-            <img src="/projets/on-passe-a-l-acte.png" />
+            <img src="/projets/on-passe-a-l-acte.jpg" />
             <h4>Association On passe à l'acte </h4>
           </a>
           <div>
