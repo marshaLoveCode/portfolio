@@ -5,6 +5,7 @@ import MysqlLogo from "../logo/mysql.svg";
 import NodeLogo from "../logo/node.svg";
 import SassLogo from "../logo/sass.svg";
 import WordpressLogo from "../logo/wordpress.svg";
+import Projetsprint from "./Projetprint";
 
 export default function Projets() {
   return (

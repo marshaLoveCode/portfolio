@@ -7,6 +7,7 @@ import About from "./Componponents/About";
 import CV from "./Componponents/Cv.jsx";
 import Projets from "./Componponents/Projets";
 import Contact from "./Componponents/Contact";
+import Projetsprint from "./Componponents/Projetprint";
 
 function App() {
   const [lang, setLang] = useState("fr");
@@ -18,6 +19,7 @@ function App() {
         <Home lang={lang} />
         <About lang={lang} />
         <Projets lang={lang} />
+        <Projetsprint />
         <CV lang={lang} />
         <Contact />
       </main>
