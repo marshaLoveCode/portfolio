@@ -1,6 +1,7 @@
 import photoshop from "../logo/photoshop.svg";
 import illustrator from "../logo/illustrator.svg";
 import difusionBee from "../logo/difusionBee.svg";
+import { motion } from "framer-motion";
 import Popup from "reactjs-popup";
 
 export default function Projetsprint() {
@@ -18,7 +19,16 @@ export default function Projetsprint() {
               }
               modal
             >
-              <img src="/design/wall-exercice.png" />
+              <motion.img
+                initial={{ opacity: 0, y: 10 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{
+                  ease: "easeInOut",
+                  duration: 0.8,
+                  delay: 0.5,
+                }}
+                src="/design/wall-exercice.png"
+              />
             </Popup>
           </div>
           <div>
@@ -49,6 +59,7 @@ export default function Projetsprint() {
           </div>
           <div>
             <div className="projets--section--grid--element--techno">
+              <img src={difusionBee} />
               <img src={photoshop} />
             </div>
           </div>
@@ -56,13 +67,13 @@ export default function Projetsprint() {
 
         <div className="projets--section--grid--element design">
           <div className="projets--section--grid--element--img design">
-            <Popup trigger={<img src="/design/jlpt-road-tshirt.png" />} modal>
-              <img src="/design/jlpt-road-tshirt.png" />
+            <Popup trigger={<img src="/design/exercises-template.png" />} modal>
+              <img src="/design/exercises-template.png" />
             </Popup>
           </div>
           <div>
             <div className="projets--section--grid--element--techno">
-              <img src={photoshop} />
+              <img src={illustrator} />
             </div>
           </div>
         </div>
@@ -79,7 +90,6 @@ export default function Projetsprint() {
           <div>
             <div className="projets--section--grid--element--techno">
               <img src={photoshop} />
-              <img src={difusionBee} />
             </div>
           </div>
         </div>
