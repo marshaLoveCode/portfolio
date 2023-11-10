@@ -47,7 +47,7 @@ function App() {
                   delay: 0,
                 }}
               >
-                scroll:Zoom click:rotation rightclic:move
+                scroll=Zoom clic=Rotation rightclic=Move
               </motion.p>
             </Html>
           ) : (
