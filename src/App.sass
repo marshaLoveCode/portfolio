@@ -1,7 +1,18 @@
 body
   background: #0F0C0D
-  padding-inline: 50px
+  margin: 0
 
+#controlCanvas
+  opacity:0
+  
+canvas:hover
+  transition: 1s ease
+  #controlCanvas
+    opacity: 1
+  
+#portfolio
+  padding-inline: 50px
+  
 .blob
   position: fixed
   right: 80px
@@ -35,7 +46,12 @@ nav
   justify-content: space-between
   &--title
     width: 50%
-    position: sticky
+    height: 100vh
+    display: flex
+    flex-direction: column
+    justify-content: center
+    z-index: 9
+    position: relative
     h1
       font-size: 48px
       margin: 0

@@ -1,11 +1,13 @@
 import { motion } from "framer-motion";
+import { useEffect } from "react";
+
 export default function Home({ lang }) {
   if (lang === "fr") {
     return (
       <section className="home--section" id="home--section">
         <div className="home--section--title">
           <motion.h1
-            key={"EnNav"}
+            key={"profession"}
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{
@@ -17,7 +19,7 @@ export default function Home({ lang }) {
             Shango Walungua
           </motion.h1>
           <motion.h2
-            key={"EnNav"}
+            key={"shango"}
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{
@@ -26,7 +28,7 @@ export default function Home({ lang }) {
               delay: 1,
             }}
           >
-            Designer Web
+            Designeur Web
           </motion.h2>
         </div>
         <svg
@@ -68,7 +70,7 @@ export default function Home({ lang }) {
       <section className="home--section" id="home--section">
         <div className="home--section--title">
           <motion.h1
-            key={"EnNav"}
+            key={"profession"}
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{
@@ -80,7 +82,7 @@ export default function Home({ lang }) {
             Shango Walungua
           </motion.h1>
           <motion.h2
-            key={"EnNav"}
+            key={"shango"}
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{

@@ -1,28 +1,64 @@
-import { useState } from "react";
-import { MouseTrail } from "@stichiboi/react-elegant-mouse-trail";
-import "./App.sass";
-import Header from "./Componponents/Header";
-import Home from "./Componponents/Home";
-import About from "./Componponents/About";
-import CV from "./Componponents/Cv.jsx";
-import Projets from "./Componponents/Projets";
-import Contact from "./Componponents/Contact";
-import Projetsprint from "./Componponents/Projetprint";
+import { Canvas, useFrame } from "@react-three/fiber";
+import { OrbitControls, Html, Environment } from "@react-three/drei";
+import { Room } from "./Room";
+import Portfolio from "./Portfolio";
+import { motion } from "framer-motion";
+import { useEffect, useState } from "react";
 
 function App() {
-  const [lang, setLang] = useState("fr");
+  const [hover, setHover] = useState(false);
+
   return (
     <>
-      <Header lang={lang} setLang={setLang} />
-      <MouseTrail strokeColor="#EF7BA0" lineDuration="30" />
-      <main>
-        <Home lang={lang} />
-        <About lang={lang} />
-        <Projets lang={lang} />
-        <Projetsprint />
-        <CV lang={lang} />
-        <Contact />
-      </main>
+      <motion.div
+        key={"everything"}
+        initial={{ opacity: 0, y: 10 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{
+          ease: "easeInOut",
+          duration: 0.8,
+          delay: 0.5,
+        }}
+      >
+        <Canvas
+          style={{ position: "absolute" }}
+          onMouseEnter={() => {
+            setHover(true);
+          }}
+          onMouseLeave={() => {
+            setHover(false);
+          }}
+        >
+          <ambientLight />
+          <OrbitControls />
+          <directionalLight color={"#F8C9E2"} position={[1, 1, 1]} />
+          <Environment preset="night" />
+          <directionalLight position={[-4, 2, -2]} color={"red"} />
+          <Room />
+          {hover ? (
+            <Html position={[0, -2.5, 0]}>
+              <motion.p
+                key={"control"}
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{
+                  ease: "easeInOut",
+                  duration: 0.4,
+                  delay: 0,
+                }}
+              >
+                scroll:Zoom click:rotation rightclic:move
+              </motion.p>
+            </Html>
+          ) : (
+            " "
+          )}
+        </Canvas>
+
+        <main id="portfolio">
+          <Portfolio />
+        </main>
+      </motion.div>
     </>
   );
 }
