@@ -57,9 +57,9 @@ function App() {
           )}
         </Canvas>
 
-        <main id="portfolio">
+        <div id="portfolio">
           <Portfolio />
-        </main>
+        </div>
       </motion.div>
     </>
   );
