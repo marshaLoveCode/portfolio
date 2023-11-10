@@ -24,7 +24,7 @@ export default function About({ lang }) {
         {lang === "fr" ? <h3>A propos</h3> : <h3>About</h3>}
         {lang === "fr" ? (
           <p>
-            Bonjour, je suis Shango, apprenti designer web.
+            Bonjour, je suis Shango, apprenti designeur web.
             <br /> En 2020, à la suite d'une reconversion professionnelle, j'ai
             entamé un apprentissage autodidacte du développement web.
             Rapidement, ma passion pour les technologies qu'offre le web pris
@@ -48,7 +48,7 @@ export default function About({ lang }) {
         )}
       </div>
       <div className="about--section--competence">
-        <h3>Compétence</h3>
+        <h3>Compétences</h3>
         <div className="about--section--competence--logo">
           <img src={ReactLogo} onMouseOver={() => setTechno("React")} />
 
