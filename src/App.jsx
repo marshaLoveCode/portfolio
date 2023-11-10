@@ -21,7 +21,10 @@ function App() {
         }}
       >
         <Canvas
-          style={{ position: "absolute" }}
+          style={{
+            position: "absolute",
+            background: "rgba(15, 12, 13, 0.95)",
+          }}
           onMouseEnter={() => {
             setHover(true);
           }}
