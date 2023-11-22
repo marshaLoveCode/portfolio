@@ -7,6 +7,11 @@ import { useEffect, useState } from "react";
 
 function App() {
   const [hover, setHover] = useState(false);
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    setWindowWidth(window.innerWidth);
+  }, []);
 
   return (
     <>
@@ -36,7 +41,8 @@ function App() {
           <directionalLight color={"#F8C9E2"} position={[1, 1, 1]} />
           <Environment preset="night" />
           <directionalLight position={[-4, 2, -2]} color={"red"} />
-          <Room />
+          <Room windowWidth={windowWidth} />
+
           {hover ? (
             <Html position={[0, -2.5, 0]}>
               <motion.p
