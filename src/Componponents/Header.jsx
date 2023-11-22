@@ -63,7 +63,7 @@ export default function Header({ lang, setLang }) {
               setLang("en");
             }}
           >
-            fr/en
+            FR
           </li>
         </ul>
       </motion.nav>
@@ -125,7 +125,7 @@ export default function Header({ lang, setLang }) {
               setLang("fr");
             }}
           >
-            fr/en
+            EN
           </li>
         </ul>
       </motion.nav>
