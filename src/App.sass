@@ -1,12 +1,13 @@
 body, #root
-  overflow-x: hidden
   box-sizing: border-box
   margin: 0
   padding: 0
-  position: relativ
+  position: relative
 body
   background: #0F0C0D
-  width:100vw
+  width: 100vw
+  height: 100%
+  overflow-x: hidden
   
 section
   height: 100vh
@@ -14,12 +15,16 @@ section
 
 .popup-overlay 
    background: rgba(15, 12, 13, 0.95)
+   width: 100vw
+   height: 100vh
 .popup-content 
    display: flex
    justify-content: center
    align-items: center
+   height: 10px
    img 
-    height: 90vh
+    width: 90%
+    object-fit: scale-down
   
 
 #controlCanvas
@@ -272,6 +277,9 @@ nav
     
 @media only screen and (max-width: 425px) 
   
+  h3
+    font-size: 35px
+    margin-bottom: 20px
   nav ul
     padding: 30px
     li
@@ -286,6 +294,34 @@ nav
       font-size: 30px
     h2
       font-size: 25px
+      
+  .about--section--text
+    width: 100%
+
+  section
+    height: inherit !important
     
+  .home--section
+    margin-bottom:0
+    
+  .design-grid
+    margin-top: 20px
+    
+  .projets--section--grid
+    height: 350px
+    
+  .cv--section 
+    div
+      width: 90vw
+      object-fit: scale-down
+      height: 80vh
+      padding-left: 0
+      text-align: center
+      
+  .contact--section--grid 
+    flex-direction: column
+    a
+      width: 50%
+      margin-bottom: 50px
     
     

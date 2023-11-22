@@ -20,6 +20,7 @@ canvas,
 html {
   --scrollbarBG: rgba(15, 12, 13, 0.7);
   --thumbBG: rgba(245, 39, 145, 0.2);
+  height: 100%;
 }
 
 *::-webkit-scrollbar {

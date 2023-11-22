@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 export default function Header({ lang, setLang }) {
   const goToSection = (id) => {
     const section = document.getElementById(id);
+    console.log(section.offsetTop);
     window.scrollTo({
       top: section.offsetTop,
       behavior: "smooth",

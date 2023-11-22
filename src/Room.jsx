@@ -8,21 +8,13 @@ import { useGLTF } from "@react-three/drei";
 export function Room(props) {
   const { nodes, materials } = useGLTF("/chambre_baked_final.gltf");
   const innerWidth = props.windowWidth;
-  let groupPosition;
-  useEffect(() => {
-    if (innerWidth >= 425) {
-      groupPosition = [0, 0, 0];
-    } else {
-      groupPosition = [6, -3, -10];
-    }
-  }, []);
 
   return (
     <group
       {...props}
       dispose={null}
       rotation={[0, -1, 0]}
-      position={groupPosition}
+      position={innerWidth <= 425 ? [0, -3, -10] : [6, -3, -10]}
     >
       <group scale={4.588}>
         <group
