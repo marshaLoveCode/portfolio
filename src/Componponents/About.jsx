@@ -26,17 +26,16 @@ export default function About({ lang }) {
           <p>
             Bonjour, je suis Shango, apprenti designeur web.
             <br /> En 2020, à la suite d'une reconversion professionnelle, j'ai
-            entamé un apprentissage autodidacte du développement web.
-            Rapidement, ma passion pour les technologies qu'offre le web pris
-            forme. Mes passion s'articule autour de la musique, du cinéma et de
-            la littérature.
+            entamé un apprentissage autodidacte du développement web. ma passion
+            pour les technologies qu'offre le web pris forme. Mes passion
+            s'articule autour de la musique, du cinéma et de la littérature.
           </p>
         ) : (
           <p>
             Hello, I'm Shango, a self-taught web designer apprentice.
             <br /> In 2020, following a career change, I embarked on a
-            self-guided journey into web development. Quickly, my passion for
-            the technologies offered by the web took shape. My passions revolve
+            self-guided journey into web development. My passion for the
+            technologies offered by the web took shape. My passions revolve
             around music, cinema, and literature.
           </p>
         )}
